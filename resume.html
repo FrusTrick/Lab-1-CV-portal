@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav>
-        
-        <div class = "nav-content">
-            <h1 class ="site-title">
-                <a href="index.html">George Al Akhras</a>
-            </h1>
+        <div class="nav-items">
             <ul class ="nav-links">
+                <li class="nav-link>">
+                    <a href ="index.html">Home</a>
+                </li>
                 <li class ="nav-link">
                     <a href ="about.html">About me</a>
                 </li>
                 <li class ="nav-link">
-                    <a href ="resume.html">Resume</a>
+                    <a class="active" href ="resume.html">Resume</a>
                 </li>
                 <li class ="nav-link">
                     <a href ="portfolio.html">Portfolio</a>
@@ -25,5 +26,133 @@
             </ul>
         </div>
     </nav>
+
+    <main>
+        <section>
+            <div class="resume-container">
+                <div class="sidebar">
+                    <div class = "sidebar-title">
+                        <h2>My resume</h2>
+                    </div>
+                    <p>32 year old software developer living in Stockholm, Sweden</p>
+                    <div class="sidebar-item">
+                        <div class="sidebar-title">
+                            <h3>Education</h3>
+                        </div>
+                        <div class="sidebar-content">
+                            <ul>
+                                <li>Software Development .NET
+                                    <p>Chas Academy 2025-ongoing</p>
+                                </li>
+                                <li>Programming basics 
+                                    <p>NTI 2020</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-title">
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="sidebar-content">
+                            <ul>
+                                <li>Swedish</li>
+                                <li>English</li>
+                                <li>Arabic</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-main">
+                    <div class="main-hero">
+                    <h4>GEORGE AL AKHRAS</h4>
+                </div>
+                <div class="resume-about-me">
+                    <div class="resume-title">
+                        <h3>ABOUT ME</h3>
+                        <div class="about-description">
+                            <p>
+                            I am a Fullstack .NET Student at the Chas Academy trade school in Stockholm.
+                            The skills I have gained relate .NET based backend development and SQL as well as front-end development 
+                            with JavaScript and React. I'm a problem solver, team player and I am also qiality minded.
+                            Curently looking for a software development position with long term growth opportunities.
+                        </p>
+                    </div>
+                        </div>
+                    <div class="resume-work">
+                        <div class="resume-title">
+                            <h3>WORK EXPERIENCE</h3>
+                        </div>
+                        <div class="resume-container">
+                            <div class="internal-work">
+                                <div class="work-card">
+                                    <h3>Customer Service Advisor</h3>
+                                    <h4>Tesla Motors Sweden AB 2020</h4>
+                                    <p>
+                                    Customer service advisor for the Tesla Segeltorp workshop where I booked customers,
+                                    briefed technicians and handled their requests.
+                                    </p>
+                                </div>
+                                <div class="work-card">
+                                    <h3>Customer Car Lease Coordinator</h3>
+                                    <h4>Hedin Bil Akalla 2019-2020</h4>
+                                    <p>
+                                    End of lease coordinator responsible for guiding customers through the end-of-lease.
+                                    Coordinated efforts between post-ease vehicle inspection, banks, workshop and insurance companies.
+                                    </p>
+                                </div>
+                                <div class="work-card">
+                                    <h3>Tyre storage manager & service advisor</h3>
+                                    <h4>Hedin Bil Transportbilscenter Kista 2016-2019</h4>
+                                    <p>
+                                    Managed storage of customer wheels, pre-season bookings and after-sales. 
+                                    Resposnible for team of mechanics during the tyre-changing seasons and during the off-season I took on the role 
+                                    of Customer service advisor. 
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="resume-title">
+                        <h3>SOFTWARE DEVELOPMENT SKILLS</h3>
+                    </div>
+                    <div class="skill-card-wrapper">
+                        <div class="skill-card">
+                            <h4>Languages</h4>
+                            <ul>
+                                <li>C#</li>
+                                <li>JavaScript</li>
+                                <li>SQL</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Frameworks</h4>
+                            <ul>
+                                <li>.NET Core</li>
+                                <li>Entity Framework Core</li>
+                            </ul>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Software & Services</h4>
+                            <ul>
+                                <li>Visual Studio</li>
+                                <li>Visual Studio Code</li>
+                                <li>MSSQL</li>
+                                <li>Postman</li>
+                                <li>Azure Devops</li>
+                                <li>Umbraco CMS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+    <footer id="easteregg1">&copy; 2026 - George Al Akhras - All rights reserved</footer>
 </body>
 </html>

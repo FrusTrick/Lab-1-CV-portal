@@ -4,28 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+
     <nav>
-        <div class = "nav-content">
-            <h1 class ="site-title">
-                <a href="index.html">George Al Akhras</a>
-            </h1>
+        <div class="nav-items">
             <ul class ="nav-links">
+                <li class="nav-link>">
+                    <a href ="index.html">Home</a>
+                </li>
                 <li class ="nav-link">
                     <a href ="about.html">About me</a>
                 </li>
                 <li class ="nav-link">
-                    <a href ="resume.html">Resume</a>
+                    <a  href ="resume.html">Resume</a>
                 </li>
                 <li class ="nav-link">
-                    <a href ="portfolio.html">Portfolio</a>
+                    <a class="active" href ="portfolio.html">Portfolio</a>
                 </li>
             </ul>
+
         </div>
     </nav>
 
+    <main>
+        <main>
+        <section>
+            <div class="resume-container">
+                <div class="sidebar">
+                    <p></p>
+                    <div class="sidebar-item">
+                        <div class="sidebar-title">
+                            <h3>Github</h3>
+                        </div>
+                        <div class="sidebar-content">
+                            <a href="https://github.com/FrusTrick"> My github page</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-main">
+                    <div class="main-hero">
+                    <h4>My Portfolio</h4>
+                </div>
+                <div class="resume-about-me">
+                    <div class="resume-work">
+                        <div class="resume-title">
+                            <h3>MY PROJECTS AND COLLABORATIONS</h3>
+                        </div>
+                        <div class="resume-container">
+                            <div class="internal-work">
+                                <div class="work-card">
+                                    <h3>Refinery API</h3>
+                                    <h4>2026 2hero hackathon project - Team Ericsson</h4>
+                                    <p>
+                                        As part of the Restrepo (Team Ericsson) I helped develop an AI-powered API that aimed to streamline
+                                        the handling of internal coroporate documents.                                    
+                                    </p>
 
+                                    <button class="btn" id="openModal">Read more!</button>
+
+                                    <div id="portfolioModal" class="modal">
+                                        <div class="modal-content">
+                                            <button type="button" class="modal-close" id="closeModal">&times;</button>
+                                            <p>The project consisted of a front-end as well as a backend component where users would 
+                                                drag and drop PDF-files into the frontend that  then sent them to the backend.
+                                                 The backend then used AI to sum up the contents of the documetns and parsed the result into a stardized format.
+                                            </p>
+                                            <a href="https://github.com/FrusTrick/Ericsson_Team_AI_Hackathon">Check it out here!</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="easteregg1">&copy; 2026 - George Al Akhras - All rights reserved</footer>
 </body>
 </html>
