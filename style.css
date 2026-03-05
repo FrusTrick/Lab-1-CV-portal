@@ -217,11 +217,17 @@ footer{
     .skill-card-wrapper{
         flex-direction: column;
     }
-    .sidebar{
-        width: 30%;
-    }
     .nav-items ul{
         flex-direction: column;
+    }
+    .resume-container{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .resume-main{
+        width: 100%;
     }
 }
 

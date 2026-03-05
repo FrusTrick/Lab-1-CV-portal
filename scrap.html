@@ -183,24 +183,17 @@ ul li a.active {
     justify-content: center;
     align-items: center;
 
-    background-color: rgba(0,0,0, .3);
-
-    visibility: hidden;
-    opacity: 1;
-}
-
-.modal:target {
-    visibility: visible;
-    opacity: 1;
+    background-color: rgba(0,0,0, .5);
 }
 
 .modal-content {
-    background-color: white;
+    background-color: #1d2220;;
     width: 500px;
     max-width: 80%;
     padding: 2em;
     border-radius: 8px;
     position: relative;
+    color: white;
 }
 
 .modal-close {
@@ -220,15 +213,117 @@ footer{
     color: white;
 }
 
-@media(max-width: 600px){
+@media(max-width: 800px){
     .skill-card-wrapper{
         flex-direction: column;
     }
     .sidebar{
         width: 30%;
     }
+    .nav-items ul{
+        flex-direction: column;
+    }
 }
 
+@media print {
 
+    @page {
+        size: A4;
+        margin: 15mm 15mm 15mm 15mm;
+    }
+
+    nav,
+    footer,
+    .modal {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+        font-size: 11pt;
+        line-height: 1.4;
+    }
+
+    .resume-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .sidebar {
+        background-color: #1d2220;
+        color: white;
+        width: 22%;
+        padding: 10px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .sidebar p,
+    .sidebar li,
+    .sidebar h2,
+    .sidebar h3 {
+        color: white;
+    }
+
+    .sidebar-title {
+        border-color: aqua;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .resume-main {
+        background-color: white;
+        width: 78%;
+        padding: 10px;
+    }
+
+    .main-hero {
+        background-image: linear-gradient(to right, aqua 1%, white 120%);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        padding: 1rem;
+        font-size: 20pt;
+    }
+
+    .work-card {
+        background-image: linear-gradient(to right, rgba(0, 255, 255, 0.2) 1%, white 70%);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+        margin: 0.5rem 0;
+        padding: 0.75rem;
+    }
+
+    .resume-title {
+        border-color: black;
+    }
+
+    .skill-card {
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+
+    .skill-card-wrapper {
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+    }
+
+    .resume-about-me {
+        margin: 1rem;
+    }
+
+    .about-description {
+        margin-left: 1rem;
+    }
+
+    .internal-work {
+        margin: 1rem;
+    }
+}
 
 
